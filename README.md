@@ -7,7 +7,7 @@ Package license: BSD_3_clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: List, query and manipulate all system processes, on 'Windows', 'Linux' and 'macOS'
+Summary: List, query and manipulate all system processes, on 'Windows', 'Linux' and 'macOS'.
 
 
 

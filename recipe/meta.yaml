@@ -1,4 +1,4 @@
-{% set version = "1.3.2" %}
+{% set version = "1.3.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ps_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ps/ps_{{ version }}.tar.gz
-  sha256: 89f2456af6c7ffbc151aeccb620584ca26015b7d6188eb188488c7c4afc14704
+  sha256: 03a45651538855be806e6dd9d731f101a6bbbd34162f887f9df69583f7fb20f4
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,7 +50,7 @@ about:
   summary: List, query and manipulate all system processes, on 'Windows', 'Linux' and 'macOS'.
   license_family: BSD
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/BSD_3_clause'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/BSD_3_clause
     - LICENSE
 
 extra:

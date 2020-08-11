@@ -46,7 +46,7 @@ test:
 
 about:
   home: https://github.com/r-lib/ps#readme
-  license: BSD-3-clause
+  license: BSD-3-Clause
   summary: List, query and manipulate all system processes, on 'Windows', 'Linux' and 'macOS'.
   license_family: BSD
   license_file:

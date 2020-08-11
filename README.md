@@ -3,7 +3,7 @@ About r-ps
 
 Home: https://github.com/r-lib/ps#readme
 
-Package license: BSD_3_clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD-3-Clause
 

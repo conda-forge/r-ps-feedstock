@@ -1,4 +1,4 @@
-{% set version = "1.7.4" %}
+{% set version = "1.7.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ps_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ps/ps_{{ version }}.tar.gz
-  sha256: 2e036ea28f809f5551cff0e41586549f60cc32d0d3e431047d153d23396dd7d1
+  sha256: 1abc3ae3c55797b994973f7e43bf5c7bbb4da649a0dcfad36675e196dba4cb4e
 
 build:
   merge_build_host: true  # [win]

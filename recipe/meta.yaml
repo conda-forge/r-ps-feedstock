@@ -26,6 +26,7 @@ requirements:
     - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ stdlib("m2w64_c") }}          # [win]
+    - mingw-w64-ucrt-x86_64-winpthreads-git  # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}sed               # [win]
     - {{ posix }}grep              # [win]

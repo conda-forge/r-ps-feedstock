@@ -40,7 +40,7 @@ requirements:
     - r-base
   run:
     - r-base
-    - {{ native }}winpthreads-git  # [win]
+    - m2w64-libwinpthread-git  # [win]
 
 test:
   commands:

@@ -1,4 +1,4 @@
-From 471e22d6bab682a11b39eb0a68197e620f271e4c Mon Sep 17 00:00:00 2001
+From d51561f405eebadf85854a6fed74b952c4f7d67c Mon Sep 17 00:00:00 2001
 From: Brendan Furneaux <brendan.furneaux@gmail.com>
 Date: Sat, 12 Oct 2024 11:18:49 +0200
 Subject: [PATCH] add -lpthread on windows
@@ -8,7 +8,7 @@ Subject: [PATCH] add -lpthread on windows
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/configure b/configure
-index 4566d1b..07ed73d 100755
+index 4566d1b..53a05e8 100755
 --- a/configure
 +++ b/configure
 @@ -97,7 +97,7 @@ if [ -n "$WINDOWS" ]; then
@@ -16,7 +16,7 @@ index 4566d1b..07ed73d 100755
  
      LIBRARIES="psapi kernel32 advapi32 shell32 netapi32 iphlpapi wtsapi32"
 -    LIBRARIES="${LIBRARIES} ws2_32 PowrProf Pdh"
-+    LIBRARIES="${LIBRARIES} ws2_32 PowrProf Pdh pthreads"
++    LIBRARIES="${LIBRARIES} ws2_32 PowrProf Pdh pthread"
  
      TARGETS=interrupt
  

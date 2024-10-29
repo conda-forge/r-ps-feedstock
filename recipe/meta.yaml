@@ -1,4 +1,4 @@
-{% set version = "1.8.0" %}
+{% set version = "1.8.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ps_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ps/ps_{{ version }}.tar.gz
-  sha256: 64d566d23de4b22e0042325bdbf0934468bb910fb23c87353a2d3a9b40530a8e
+  sha256: 62a03b7f50173a1d12f37a09c2049772080b26fe180724ab8a8d6e73d4a80781
   patches:
     - 0001-add-lpthread-on-windows.patch
 
